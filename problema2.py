@@ -8,4 +8,6 @@
 #La salida debe ser
 #         (77, 'jiji', 'hola', 90, 20)
 t = input()
-print(t)
+tupla =tuple(t.split())
+tupla_invertida = tuple(reversed(tupla))
+print(tupla_invertida)
