@@ -10,5 +10,7 @@
 #La salida debe ser
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
 t = input()
+tupla1 =tuple(t.split())
 m = input()
-print(m,t,m)
+tupla2= tuple(m.split())
+print(tupla2+tupla1+tupla2)
