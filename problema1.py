@@ -11,4 +11,4 @@
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
 t = input()
 m = input()
-print(m)
+print(m,t,m)
