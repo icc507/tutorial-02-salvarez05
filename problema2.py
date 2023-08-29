@@ -10,4 +10,11 @@
 t = input()
 tupla =tuple(t.split())
 tupla_invertida = tuple(reversed(tupla))
-print(tupla_invertida)
+tupla_invertida2 =()
+for elemento in tupla_invertida:
+    elemento = elemento.strip()
+    if elemento.isdigit():
+        tupla_invertida2 += (int(elemento),)
+    else:
+        tupla_invertida2 += (elemento,)
+print(tupla_invertida2)

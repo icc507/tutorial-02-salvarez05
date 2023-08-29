@@ -10,7 +10,21 @@
 #La salida debe ser
 #         ('mundo', 44, 20, 90, 'hola', 'mundo', 44)
 t = input()
-tupla1 =tuple(t.split())
+t2= t.split()
+tupla1=()
+for elemento in t2:
+    elemento = elemento.strip()
+    if elemento.isdigit():
+        tupla1 += (int(elemento),)
+    else:
+        tupla1 += (elemento,)
 m = input()
-tupla2= tuple(m.split())
+m2 = m.split()
+tupla2= ()
+for elemento in m2:
+    elemento = elemento.strip()
+    if elemento.isdigit():
+        tupla2 += (int(elemento),)
+    else:
+        tupla2 += (elemento,)
 print(tupla2+tupla1+tupla2)
